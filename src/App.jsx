@@ -831,7 +831,7 @@ function App() {
                             <div className="text-instructions-small"><a href="https://git.marcuschiu.com/tech/?slug=2025-08-07--I%27ve-Built-Tetris-Using-ReactJS">How it's Coded</a></div>
                             <div className="versions">VERSIONS</div>
                             <div className="text-instructions-med"><a href="https://git.marcuschiu.com/tetris-canvas">canvas</a></div>
-                            <div className="text-instructions-med"><a href="https://git.marcuschiu.com/tetris-text">text</a></div>
+                            <div className="text-instructions-med"><a href="https://git.marcuschiu.com/tetris-unicode">unicode</a></div>
                             <div className="text-instructions-med"><a href="https://git.marcuschiu.com/tetris-ascii">ASCII</a></div>
                         </div>
                     </div>
