@@ -3,21 +3,23 @@ import './App.css'
 import GlobalKeyListener from './components/GlobalKeyListener.jsx'
 
 
-const audio_koro = new Audio('/korobeiniki.ogg');
+const BASE = import.meta.env.BASE_URL;
+
+const audio_koro = new Audio(BASE + 'korobeiniki.ogg');
 audio_koro.volume = 0.10;
 audio_koro.loop = true;
 
-const audio_clear = new Audio('/clear.ogg');
+const audio_clear = new Audio(BASE + 'clear.ogg');
 audio_clear.volume = 0.30;
-const audio_drop = new Audio('/drop.ogg');
+const audio_drop = new Audio(BASE + 'drop.ogg');
 audio_drop.volume = 0.30;
-const audio_move = new Audio('/move.ogg');
+const audio_move = new Audio(BASE + 'move.ogg');
 audio_move.volume = 0.30;
-const audio_rotate = new Audio('/rotate.ogg');
+const audio_rotate = new Audio(BASE + 'rotate.ogg');
 audio_rotate.volume = 0.30;
-const audio_landing = new Audio('/landing.ogg');
+const audio_landing = new Audio(BASE + 'landing.ogg');
 audio_landing.volume = 0.30;
-const audio_game_over = new Audio('/game-over.ogg');
+const audio_game_over = new Audio(BASE + 'game-over.ogg');
 audio_game_over.volume = 0.30;
 
 
@@ -826,11 +828,11 @@ function App() {
                             <div>↓ - down</div>
                             <div className="canvas-border-split"></div>
                             <div className="text-instructions-small">OMOLORD I NEED TO STOP</div>
-                            <div className="text-instructions-small"><a href="https://www.marcuschiu.com/tinkering/2025-08-07/">How it's Coded</a></div>
+                            <div className="text-instructions-small"><a href="https://git.marcuschiu.com/tech/?slug=2025-08-07--I%27ve-Built-Tetris-Using-ReactJS">How it's Coded</a></div>
                             <div className="versions">VERSIONS</div>
-                            <div className="text-instructions-med"><a href="https://tetris.marcuschiu.com">canvas</a></div>
-                            <div className="text-instructions-med"><a href="https://tetris-text.marcuschiu.com">text</a></div>
-                            <div className="text-instructions-med"><a href="https://tetris-ascii.marcuschiu.com">ASCII</a></div>
+                            <div className="text-instructions-med"><a href="https://git.marcuschiu.com/tetris-canvas">canvas</a></div>
+                            <div className="text-instructions-med"><a href="https://git.marcuschiu.com/tetris-text">text</a></div>
+                            <div className="text-instructions-med"><a href="https://git.marcuschiu.com/tetris-ascii">ASCII</a></div>
                         </div>
                     </div>
                     <div className="canvas-border">
